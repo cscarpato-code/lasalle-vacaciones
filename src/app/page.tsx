@@ -1,11 +1,12 @@
 import Link from 'next/link'
 
 const sectores = [
-  { slug: 'economato', nombre: 'Economato',                           emoji: '🏛' },
-  { slug: 'fls',       nombre: 'Fundación La Salle',                  emoji: '🤝' },
-  { slug: 'hec',       nombre: 'Hermanos de las Escuelas Cristianas', emoji: '✝️' },
-  { slug: 'eaa',       nombre: 'Equipo de Animación (EAA)',           emoji: '🎓' },
-  { slug: 'aea',       nombre: 'Asociación Educacionista (AEA)',      emoji: '📚' },
+  { slug: 'eaa',          nombre: 'Equipo de Animación (EAA)',           emoji: '🎓' },
+  { slug: 'economato',    nombre: 'Economato',                           emoji: '🏛' },
+  { slug: 'hec',          nombre: 'Hermanos de las Escuelas Cristianas', emoji: '✝️' },
+  { slug: 'fls',          nombre: 'Fundación La Salle',                  emoji: '🤝' },
+  { slug: 'comunicacion', nombre: 'Comunicación',                        emoji: '📢' },
+  { slug: 'secretaria',   nombre: 'Secretaría Distrital',               emoji: '📋' },
 ]
 
 export default function HomePage() {
