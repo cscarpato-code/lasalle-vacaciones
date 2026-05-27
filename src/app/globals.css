@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F5F6FA;
+  --foreground: #171717;
+
+  /* La Salle Argentina — Manual de Identidad */
+  --ls-azul: #1B2C65;
+  --ls-azul-medio: #274185;
+  --ls-azul-claro: #0054A6;
+  --ls-naranja: #F58220;
+  --ls-gris: #636466;
+  --ls-fondo: #F5F6FA;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Colores institucionales como utilidades Tailwind */
+  --color-ls-azul: var(--ls-azul);
+  --color-ls-azul-medio: var(--ls-azul-medio);
+  --color-ls-azul-claro: var(--ls-azul-claro);
+  --color-ls-naranja: var(--ls-naranja);
+  --color-ls-gris: var(--ls-gris);
+  --color-ls-fondo: var(--ls-fondo);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
