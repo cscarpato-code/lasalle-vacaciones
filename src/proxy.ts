@@ -27,7 +27,7 @@ export function proxy(request: NextRequest) {
     const sectorSlug = match[1]
     const session = parseCookie(request.cookies.get('empleado_session')?.value)
     if (!session || session.sector_slug !== sectorSlug) {
-      return NextResponse.redirect(new URL(`/${sectorSlug}/login`, request.url))
+      return NextResponse.redirect(new URL(`/${sectorSlug}`, request.url))
     }
   }
 
